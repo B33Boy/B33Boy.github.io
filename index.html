@@ -15,6 +15,11 @@
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+
+      <!--CAROUSEL-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<!-- CSS
     ================================================== -->
    <link rel="stylesheet" href="css/default.css">
@@ -46,7 +51,7 @@
          <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+	         <li><a class="smoothscroll" href="#resume">Portfolio</a></li>
             <!-- <li><a class="smoothscroll" href="#portfolio">Works</a></li> -->
             <!-- <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li> -->
             <!-- <li><a class="smoothscroll" href="#contact">Contact</a></li> -->
@@ -57,9 +62,9 @@
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline">Hi There!</h1>
-            <h3>My name is <span>Abhi Patel</span>. I'm an Ontario based <span>Mechatronics Engineering Student</span>, eager to learn as much as I can to prepare for a career in <span>designing</span>, <span>programming</span>, and <span>manufacturing</span> intelligent machines.
+            <h3>My name is <span>Abhi Patel</span>. I'm an Ontario based <span>Mechatronics Engineering Student</span>, eager to learn as much as I can to prepare for a career in <span>programming</span>, and <span>designing</span> intelligent machines.
 
-            Learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <br>Learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
             <hr />
             <ul class="social">
                <li><a href="https://www.linkedin.com/in/abhi-patel-570090143"><i class="fa fa-linkedin"></i></a></li>
@@ -91,14 +96,9 @@
          <div class="nine columns main-col">
 
             <h2>About Me</h2>
-
-            <p> Currently a first year Mechatronics Engineering student at UOIT. Interested in fabricating smarter, economically and environmentally sustainable machines of the future. <br>
-
-            I am currently developing my technical skills through both personal and school related projects, including: an Arduino 3D scanner using ultrasonic distance sensors, a ROS powered rover for my university Robotics Club, and an online machine learning course by Stanford University. <br>
-
-            I am a highly motivated creative thinker, eager to build my skills to prepare me for career in robotics. <br>
-
-            My current goal is to achieve a summer job in my field of study. I also aim to expand my knowledge of engineering in an innovative environment where teamwork is necessary. <br>
+            <br>
+            <p>Currently a second year Mechatronics Engineering student at UOIT. Interested in developing smarter, economically and environmentally sustainable machines of the future.
+                   I am currently developing my technical skills through both personal and school related projects including a self driving RC car, and a ROS powered rover. As for extracurriculars, I am the Junior Programming Executive for the Robotics Club.<br>
             </p>
 
             <div class="row">
@@ -107,17 +107,17 @@
 
                   <h2>Contact Details</h2>
                   <p class="address">
-                     <span><b>Personal Email:</b><br> AbhiP202@gmail.com</span><br>
-                     <span><b>LinkedIn:</b><br> https://www.linkedin.com/in/abhi-patel-570090143</span><br>
-                     <span><b>Github:</b><br> https://github.com/b33boy</span> <br>
-                     <span><b>Blog:</b><br> https://abhipateldotblog.wordpress.com/</span>
-					   </p>
+                     <span><b>Personal Email:</b><br> <a href="abhi.patel@uoit.net">abhi.patel@uoit.net</a></span><br>
+                     <span><b>LinkedIn:</b><br> <a href="https://www.linkedin.com/in/abhi-patel-0">https://www.linkedin.com/in/abhi-patel-0</a></span><br>
+                     <span><b>Github:</b><br> <a hre="https://github.com/b33boy">https://github.com/b33boy</a></span> <br>
+                     <span><b>Blog:</b><br> <a href="https://abhipateldotblog.wordpress.com">https://abhipateldotblog.wordpress.com</a></span>
+                  </p>
 
                </div>
 
                <div class="columns download">
                   <p>
-                     <a href="downloads/Abhi_Patel_09_23_18.pdf" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                     <a href="downloads/Abhi_Patel_11_04_18.pdf" class="button"><i class="fa fa-download"></i>Download Resume</a>
                   </p>
                </div>
 
@@ -133,6 +133,34 @@
    <!-- Resume Section
    ================================================== -->
    <section id="resume">
+
+
+   <div class="container">
+     <h2>Projects</h2>
+     <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+       <!-- Indicators -->
+       <ol class="carousel-indicators">
+         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+       </ol>
+
+       <!-- Wrapper for slides -->
+       <div class="carousel-inner">
+         <div class="item active">
+           <img src="https://abhipateldotblog.files.wordpress.com/2018/10/side_view.jpg?w=840" alt="Self Driving Car" style="width:100%;">
+         </div>
+          
+
+       <!-- Left and right controls -->
+       <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+         <span class="glyphicon glyphicon-chevron-left"></span>
+         <span class="sr-only">Previous</span>
+       </a>
+       <a class="right carousel-control" href="#myCarousel" data-slide="next">
+         <span class="glyphicon glyphicon-chevron-right"></span>
+         <span class="sr-only">Next</span>
+       </a>
+     </div>
+   </div>
 
       <!-- Education
       ----------------------------------------------- -->
@@ -160,49 +188,31 @@
       </div> <!-- End Education -->
 
 
-      <!-- Volunteering
+      <!-- Work Exp
       ----------------------------------------------- -->
-      <div class="row volunteering">
+
+      <div class="row work">
 
          <div class="three columns header-col">
-            <h1><span>Volunteering</span></h1>
+            <h1><span>Work Experience</span></h1>
          </div>
 
          <div class="nine columns main-col">
-         
-            <div class="row item">
-
-               <div class="twelve columns">
-                  <h3>UOIT Robotics Competition Staff</h3>
-                  <p class="info">University of Ontario Institute of Technology<span>&bull;</span> <em class="date">December 2017</em></p>
-                  <p>Assist teams by giving design/programming advice <br>Set up tables and equipment</p>
-               </div>
-
-            </div> <!-- item end -->
 
             <div class="row item">
 
                <div class="twelve columns">
-                  <h3>Library Volunteer</h3>
-                  <p class="info">Markham Public Libraries<span>&bull;</span> <em class="date">July 2014 - August 2014</em></p>
-                  <p>Host group reading sessions <br>Arts and craft activities with children</p>
+                  <h3>Hardware Developer</h3>
+                  <p class="info">CAROBOT Learning And Research Organization<span>&bull;</span> <em class="date">May 2018 - August 2018</em></p>
+                  <a href="https://www.carobot.org/2018/07/15/swisscheese-robot-car-development/">Applied the engineering design process to develop an Arduino powered robot car using for students to assemble during robotics classes.</a>
                </div>
 
             </div> <!-- item end -->
 
-            <div class="row item">
-
-               <div class="twelve columns">
-                  <h3>Hospital Volunteer</h3>
-                  <p class="info">Markham Stouffville Hospital<span>&bull;</span> <em class="date">July 2013 - August 2013</em></p>
-                  <p>Direct people to rooms on the diagnostic imaging wing based on their needs <br>Greet visitors and provide answers to any questions </p>
-               </div>
-
-            </div> <!-- item end -->
 
          </div> <!-- main-col end -->
 
-      </div> <!-- End Volunteering -->
+      </div> <!-- End Clubs -->
 
       <!-- Clubs
       ----------------------------------------------- -->
@@ -213,12 +223,13 @@
          </div>
 
          <div class="nine columns main-col">
-         
+
             <div class="row item">
 
                <div class="twelve columns">
                   <h3>UOIT Robotics Club - Programming Team</h3>
                   <p class="info">University of Ontario Institute of Technology<span>&bull;</span> <em class="date">September 2017 - Present</em></p>
+                  <p> Currently using ROS to </p>
                </div>
 
             </div> <!-- item end -->
@@ -228,10 +239,11 @@
                <div class="twelve columns">
                   <h3>UOIT Engineering Society - Marketing Team</h3>
                   <p class="info">University of Ontario Institute of Technology<span>&bull;</span> <em class="date">October 2017 - Present</em></p>
+                  <p>Propose and develop posters and patches using photoshop, and illustrator for EngSoc Events</p>
                </div>
 
             </div> <!-- item end -->
-            
+
 
          </div> <!-- main-col end -->
 
@@ -248,29 +260,28 @@
 
          <div class="nine columns main-col">
 
-            <h4>Soft Skills: Critical Thinking, Problem Solving, Mentoring, Teamwork, Leadership, Excellent Communication Skills.</h4><br>
-
 				<div class="bars"><h3>Technical Skills</h3>
 
 				   <ul class="skills">
 					   <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
 						<li><span class="bar-expand matlab"></span><em>MATLAB</em></li>
-                  <li><span class="bar-expand python"></span><em>Python</em></li>
-                  <li><span class="bar-expand linux_shell"></span><em>Linux Shell</em></li>
-                  <li><span class="bar-expand java"></span><em>Java</em></li>
-                  <li><span class="bar-expand arduino"></span><em>Arduino</em></li>
+                        <li><span class="bar-expand python"></span><em>Python</em></li>
+                        <li><span class="bar-expand linux_shell"></span><em>Linux Shell</em></li>
+                        <li><span class="bar-expand java"></span><em>Java</em></li>
+                        <li><span class="bar-expand arduino"></span><em>Arduino</em></li>
 						<li><span class="bar-expand css"></span><em>CSS</em></li>
 						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
-                  <li><span class="bar-expand javascript"></span><em>JavaScript</em></li>
+                        <li><span class="bar-expand javascript"></span><em>JavaScript</em></li>
 					</ul>
-
-               <h4> Frameworks/Libraries: OpenCV, Numpy, MatPlotLib, Pandas, BeautifulSoup, LibGDX.</h4><br>
 
 				</div><!-- end skill-bars -->
 
 			</div> <!-- main-col end -->
 
       </div> <!-- End skills -->
+
+
+
 
    </section> <!-- Resume Section End-->
 
@@ -285,7 +296,7 @@
          <div class="twelve columns">
 
             <ul class="social-links">
-               <li><a href="https://www.linkedin.com/in/abhi-patel-570090143"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/abhi-patel-0"> <i class="fa fa-linkedin"></i> </a></li>
                <li><a href="https://github.com/b33boy"><i class="fa fa-github"></i></a></li>
                <li><a href="https://abhipateldotblog.wordpress.com/"><i class="fa fa-check"></i></a></li>
 
